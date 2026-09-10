@@ -122,4 +122,7 @@ Ensaios de certificação acreditados pelo Inmetro em inversores on-grid, off-gr
 ## Formação
 
 **Engenharia Elétrica**, ênfase em Eletrônica de Potência e Controle, UFSM, 2016 a 2022.
-TCC: equalizador de baterias em série baseado em capacitor comutado, que virou artigo.
+
+TCC: equalizador de carga para baterias em série, baseado em capacitor comutado em topologia de duplo nível. A topologia dispensa elementos magnéticos e transfere carga por chaveamento entre capacitores; o arranjo em duplo nível reduz o número de etapas para equalizar células distantes entre si na série, que é a limitação da topologia clássica.
+
+📄 *Implementation and Analysis of a Double-Tiered Switched Capacitor Series Battery Equalizer Circuit*, **COBEP/SPEC 2023**, primeiro autor, com Mauricio Mendes da Silva (Universidad Tecnológica del Uruguay) e António M. S. Spencer Andrade (UFRGS e UFSM).
