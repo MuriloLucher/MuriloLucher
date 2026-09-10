@@ -69,7 +69,7 @@ O dado é gravado **na planta e na nuvem**, e nenhuma das duas é cache da outra
 
 **Cadência configurável.** A periodicidade de registro não é um número que eu escolhi: vem do Programa de Autocontrole aprovado pelo SIF de cada planta. Por isso a cadência de gravação do histórico é parâmetro por instalação, separada da cadência de leitura. O painel mostra em 5 segundos o que o banco guarda a cada 60, e a amostragem **força o registro em toda transição de alarme**, para que a política de armazenamento nunca engula o evento que interessa.
 
-**Painel web.** Frota por ponto de medição, não por gateway, porque um gateway pode ler vários equipamentos. Atualização por SSE em vez de *polling*: a leitura chega à tela em cerca de 0,6 s. Relatórios em PDF gerados no servidor.
+**Painel web.** Frota organizada por ponto de medição, não por gateway, porque um gateway pode ler vários equipamentos. Atualização por SSE em vez de *polling*: a leitura chega à tela em cerca de 0,6 s. Relatórios em PDF gerados no servidor. O **design do painel é de [Victor Bonadiman](https://github.com/Vbonadiman)**; do meu lado ficaram a API, as consultas e a integração com o banco.
 
 **Detecção de falha de link.** Um nó mudo dispara alarme por ponto. É requisito, não conveniência: sem isso, a substituição do tronco cabeado por rádio não se sustenta perante a norma.
 
@@ -77,7 +77,7 @@ Código fechado. Aqui está a engenharia, não a fonte.
 
 `C` · `ESP-IDF` · `FreeRTOS` · `ESP32-S3` · `SX1262` · `Modbus RTU` · `RS-485` · `MQTT/TLS` · `PostgreSQL` · `TimescaleDB` · `SQLite` · `Python` · `KiCad`
 
-> O supervisório que roda ao lado deste sistema foi desenvolvido por [Victor Bonadiman](https://github.com/Vbonadiman). Eu o adaptei ao protocolo e ao banco do FX Gateway.
+> **Crédito.** O **supervisório industrial** que roda ao lado deste sistema e o **design do painel do servidor** são de [Victor Bonadiman](https://github.com/Vbonadiman), que responde pelos sistemas internos da empresa. Meu trabalho nessa parte foi de integração: adaptar o supervisório ao protocolo e ao banco do FX Gateway, e implementar a camada de dados por trás do painel.
 
 ---
 
