@@ -4,7 +4,7 @@ Engenheiro Eletricista formado pela UFSM. Desenvolvo eletrônica embarcada na Fl
 
 Antes disso foram três anos em laboratório acreditado pelo Inmetro, ensaiando inversores fotovoltaicos para certificação, e depois P&D em parceria com a indústria. Cheguei ao desenvolvimento pelo lado de quem reprova equipamento no ensaio e precisa dizer exatamente onde ele falhou.
 
-📍 Chapecó, SC · 📫 lucher.murilo@gmail.com · [LinkedIn](https://www.linkedin.com/in/murilo-lucher-75b327261/)
+📍 Chapecó, SC · 📫 lucher.murilo@gmail.com · [LinkedIn](https://www.linkedin.com/in/murilo-lucher/)
 
 ---
 
