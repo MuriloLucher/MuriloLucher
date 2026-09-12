@@ -27,7 +27,7 @@ PCB própria em KiCad, hoje na quinta revisão, fabricada e em operação.
 - **Dois canais RS-485**, em UARTs separadas, com transceptores próprios
 - **Isolação galvânica** no canal que sai da caixa, com módulo isolado que já traz a fonte. Terra de painel industrial não está no mesmo potencial: sem a barreira, o gateway vira caminho de retorno entre dois pontos de aterramento, e é assim que se queima transceptor em campo
 - **Ethernet W5500** prevista para instalações que tenham rede cabeada
-- Protótipos fresados em CNC e gravados a laser de fibra aqui mesmo, do arquivo de fabricação à placa pronta
+- Protótipos fresados em CNC e gravados a laser de fibra aqui mesmo, e montados em **insersora SMD** na própria empresa: do arquivo de fabricação à placa montada e testada, sem depender de fornecedor para fechar uma revisão. É o que permite a placa estar na quinta revisão
 
 ### Firmware
 
@@ -75,7 +75,7 @@ O dado é gravado **na planta e na nuvem**, e nenhuma das duas é cache da outra
 
 Código fechado. Aqui está a engenharia, não a fonte.
 
-`C` · `ESP-IDF` · `FreeRTOS` · `ESP32-S3` · `SX1262` · `Modbus RTU` · `RS-485` · `MQTT/TLS` · `PostgreSQL` · `TimescaleDB` · `SQLite` · `Python` · `KiCad`
+`C` · `ESP-IDF` · `FreeRTOS` · `ESP32-S3` · `SX1262` · `Modbus RTU` · `RS-485` · `MQTT/TLS` · `PostgreSQL` · `TimescaleDB` · `SQLite` · `Python` · `KiCad` · `Montagem SMD`
 
 > **Crédito.** O **supervisório industrial** que roda ao lado deste sistema e a **interface visual do painel** são de [Victor Bonadiman](https://github.com/Vbonadiman), que responde pelos sistemas internos da empresa. A arquitetura do servidor, o modelo de dados e a integração são minhas: adaptei o supervisório ao protocolo e ao banco do FX Gateway.
 
