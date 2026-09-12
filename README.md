@@ -119,6 +119,10 @@ Ensaios de certificação acreditados pelo Inmetro em inversores on-grid, off-gr
 
 É de onde vem o resto. Ensaio de certificação não admite meio-termo: ou o equipamento atende à norma, ou não atende, e alguém precisa demonstrar em que ponto.
 
+Desse período saiu uma pergunta que virou artigo: **o sensor do próprio inversor erra, e esse erro entra no laudo.** Se a tensão e a corrente que o equipamento reporta divergem do que o laboratório mede, a diferença não fica no equipamento: ela contamina o resultado do ensaio de certificação e pode aprovar ou reprovar indevidamente.
+
+📄 *O impacto de erros de medições de sensores de inversores fotovoltaicos em ensaios de certificação acreditados pelo Inmetro*, **8º Congresso Brasileiro de Geração Distribuída (CBGD 2023)**, Belo Horizonte, primeiro autor e autor correspondente, com a equipe do laboratório de ensaios fotovoltaicos da UFSM.
+
 ---
 
 ## Como eu trabalho
@@ -142,3 +146,5 @@ Ensaios de certificação acreditados pelo Inmetro em inversores on-grid, off-gr
 TCC: equalizador de carga para baterias em série, baseado em capacitor comutado em topologia de duplo nível. A topologia dispensa elementos magnéticos e transfere carga por chaveamento entre capacitores; o arranjo em duplo nível reduz o número de etapas para equalizar células distantes entre si na série, que é a limitação da topologia clássica.
 
 📄 *Implementation and Analysis of a Double-Tiered Switched Capacitor Series Battery Equalizer Circuit*, **COBEP/SPEC 2023**, primeiro autor, com Mauricio Mendes da Silva (Universidad Tecnológica del Uruguay) e António M. S. Spencer Andrade (UFRGS e UFSM).
+
+Antes do TCC, quatro trabalhos apresentados na graduação, em controle e instrumentação: **kit didático de conversor CC/CA** para a disciplina de Eletrônica de Potência (37ª Jornada Acadêmica Integrada da UFSM, 2022) e **adaptação de planta didática de automação de nível** para práticas de controle realimentado (1ª Feira de Ciências, Tecnologia e Inovação da UFSM Cachoeira do Sul, 2022), ambos como apresentador; **planta bola em tubo de baixo custo** e **sensores para uma estufa**, na mesma feira, como coautor.
