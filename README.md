@@ -137,7 +137,7 @@ Ensaios de certificação acreditados pelo Inmetro em inversores on-grid, off-gr
 
 ## Formação
 
-**Engenharia Elétrica**, ênfase em Eletrônica de Potência e Controle, UFSM, 2016 a 2022.
+**Engenharia Elétrica**, ênfase em Eletrônica de Potência e Controle, UFSM, 2016 a 2023.
 
 TCC: equalizador de carga para baterias em série, baseado em capacitor comutado em topologia de duplo nível. A topologia dispensa elementos magnéticos e transfere carga por chaveamento entre capacitores; o arranjo em duplo nível reduz o número de etapas para equalizar células distantes entre si na série, que é a limitação da topologia clássica.
 
