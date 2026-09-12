@@ -85,7 +85,7 @@ Código fechado. Aqui está a engenharia, não a fonte.
 
 ### Detecção de falta de arco CC em inversores fotovoltaicos, com a WEG
 
-Campanha experimental conduzida no Instituto de Energia e Mobilidade da UFSM, em parceria com a WEG, sob os requisitos da IEC 63027.
+Campanha experimental conduzida no Instituto de Energia e Mobilidade da UFSM, com a [AUFTEK Tecnologia](https://github.com/AUFTEK-TECNOLOGIA) e em parceria com a WEG, sob os requisitos da IEC 63027.
 
 A pergunta era prática: **onde medir a corrente muda a chance de detectar o arco?** Comparei quatro pontos em um inversor comercial com Boost de entrada, a string em falta, a string de referência, o ponto após o paralelismo das strings e o capacitor de entrada, e medi o efeito de cada um sobre a sensibilidade espectral.
 
@@ -94,6 +94,22 @@ A aquisição foi feita sobre o kit de referência da Texas Instruments para det
 📄 *Experimental Evaluation of the Influence of Current Measurement Point on DC Arc Fault Detection in Photovoltaic Inverters*, **SEPOC 2025**, primeiro autor, em coautoria com a equipe de Drives & Controls da WEG.
 
 `Texas Instruments C2000` · `Processamento digital de sinais` · `Análise espectral` · `IEC 63027`
+
+### Datalogger de bancada: o hardware
+
+Antes de existir a campanha acima, faltava um instrumento próprio para gravar corrente em alta taxa durante os ensaios. **Projetei o hardware**: uma placa em KiCad no formato de expansão do kit STM32F429I, fabricada e usada nos ensaios.
+
+O que ela resolve, e por quê:
+
+- **Condicionamento do sensor Hall** com dois OPA376: o sinal bruto do sensor passa por ganho e filtragem antes do ADC, e uma rede de referência própria fixa o ponto de operação da entrada
+- **Proteção por TVS** SM6T10CA nas entradas. O cabo sai do painel, e o ensaio consiste em provocar arco de propósito: a entrada precisa sobreviver ao mesmo fenômeno que está medindo
+- **RS-485** com SN65HVD10, para a placa conversar com o resto da bancada
+- **Alimentação de 24 V**, que é a tensão disponível no painel do inversor, com conversor CC-CC embarcado
+- Ligações dedicadas para a **entrada e a saída do conversor Boost**, que são dois dos quatro pontos de medição comparados no artigo
+
+> **Crédito.** O **firmware do STM32 e o software de bancada** são da [AUFTEK Tecnologia](https://github.com/AUFTEK-TECNOLOGIA), parceira do projeto. Meu escopo nesta placa foi o hardware.
+
+`KiCad` · `Condicionamento de sinal` · `Instrumentação` · `STM32F429` · `RS-485`
 
 ---
 
